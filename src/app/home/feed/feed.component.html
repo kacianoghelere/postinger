@@ -1,0 +1,13 @@
+<ul class="list-group feed-list">
+  <li *ngFor="let post of posts" class="list-group-item feed">
+    <div class="feed-img">
+      <a href="#" href="">
+        <img src="http://lorempixel.com/64/64/" alt="pic" class="feed-avatar  img-thumbnail">
+      </a>
+    </div>
+    <div class="feed-content">
+      <div class="feed-author">{{post?.author}}</div>
+      <div class="feed-text">{{post?.text}}</div>
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,42 @@
+.feed, .feed-list {
+  display: block;
+  float: left;
+  width: 100%;
+}
+.feed-list li {
+  padding: 5px;
+}
+.feed .feed-img {
+  display: block;
+  float: left;
+  width: 70px;
+  min-height: 70px;
+  padding: 3px;
+  width: 64px;
+  height: 64px;
+}
+.feed .feed-img img {
+  margin: 0 auto;
+}
+.feed .feed-content {
+  display: block;
+  float: left;
+  width: calc(100% - 70px);
+  min-height: 70px;
+}
+.feed .feed-content .feed-author {
+  display: block;
+  float: left;
+  width: 100%;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 3px 5px;
+}
+.feed .feed-content .feed-text {
+  display: block;
+  color: gray;
+  float: left;
+  width: 100%;
+  padding: 3px 5px;
+  font-size: 13px;
+}

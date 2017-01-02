@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #EEE;
+}
+.page-header {
+  margin-top: 0;
+}
+.page-header .page-title {
+  margin: 0;
+}

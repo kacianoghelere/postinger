@@ -1,3 +1,28 @@
-<h1>
-  {{title}}
-</h1>
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="['']">{{title}}</a>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a [routerLink]="['/home']">Home</a></li>
+        <li><a [routerLink]="['/home/help']">Help</a></li>
+        <!-- <li><a href="/users">Users</a></li> -->
+          <li><a href="/users">Users</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Account <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="/users/1">Profile</a></li>
+              <li><a href="/users/1/edit">Settings</a></li>
+              <li class="divider"></li>
+              <li><a rel="nofollow" data-method="delete" href="/logout">Log out</a></li>
+            </ul>
+          </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="container content">
+  <router-outlet></router-outlet>
+</section>
